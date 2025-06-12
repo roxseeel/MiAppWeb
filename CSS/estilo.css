@@ -1,0 +1,178 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* Fondo en HTML con CSS */
+    background-image: url("../Images/gradient wallpaper.jpeg");
+    background-size: cover;
+    /*cover, contain, auto */
+    background-repeat: no-repeat;
+    background-position: center;
+
+    /* Letra, color */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #fff9ed;
+    color: #000000;
+}
+
+/* Encabezado */
+header {
+    background-color: #ffe9bf;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(1, 1, 1, 0.1);
+}
+
+header h1 {
+    margin-bottom: 10px;
+    font-size: 2.5rem;
+}
+
+nav {
+    background-color: #ffd484;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+    gap: 30px;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 20px;
+    transition: white 0.3s ease;
+}
+
+nav a:hover {
+    background: #7e7b75;
+}
+
+main {
+    padding: 40 px 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+/* Datos Formulario */
+form {
+    border: 2px solid;
+    padding: 20px;
+    width: 500px;
+    margin: auto;
+    box-sizing: border-box;
+    border-radius: 20px;
+    box-shadow: 12px 12px 2px 1px rgba(0, 0, 0, 0.1);
+}
+
+.NombreApellido input {
+    width: 130px;
+    height: 25px;
+    margin-left: 20px;
+}
+
+.DivEdad {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.DivEdad input {
+    width: 130px;
+    height: 25px;
+    margin-left: 120px;
+}
+
+.Etiquetas {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    background-color: red;
+}
+
+.InputPreferencias {
+    display: flex;
+    flex-direction: column;
+    gap: 13.5 px;
+    background-color: cyan;
+}
+
+.Preferancias {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+label {
+    width: 150px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+input {
+    width: 300px;
+    height: 25px;
+}
+
+.InputPreferencias input {
+    width: 200px;
+    height: 20px;
+}
+
+/* Secciones */
+section {
+    background: #ffe9bf;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+/* Subtitulos */
+section h2 {
+    color: #000000;
+    margin-bottom: 15px;
+}
+
+/* Pie de página */
+footer {
+    background: #ffd484;
+    color: #aaa;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 0.9rem;
+    margin-top: 40px;
+}
+
+/* Responsive para moviles */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    section {
+        padding: 20px;
+    }
+}

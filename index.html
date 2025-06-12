@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/estilo.css">
+    <script src="JavaScript/script.js"></script>
+    <title>My App</title>
+</head>
+
+<body>
+    <header> <!--Cabecera Principal-->
+        <h1>Mi primera app</h1>
+        <nav> <!--Barra de navegación-->
+            <ul>
+                <li><a href="">Inicio</a></li>
+                <li><a href="Pages/sobremi.html">Sobre mí</a></li>
+                <li><a href="Pages/portafolio.html">Portafolio</a></li>
+                <li><a href="Pages/servicios.html">Servicios</a></li>
+                <li><a href="Pages/contactos.html">Contactos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main> <!--Contenido principal-->
+        <section> <!--Sección de contenido-->
+            <h2>Carta de presentación</h2>
+            <p>Este es el conetido para mi carta de presentación:</p>
+            <form>
+                <div class="Preferancias">
+                    <div class="Etiquetas">
+                        <label>Nombre:</label>
+                        <label>Apellido:</label>
+                    </div>
+                    <div class="InputPreferencias">
+                        <input type="text" id="nombre">
+                        <input type="text" id="apellido">
+                    </div>
+                </div>
+                <div class="DivEdad">
+                    <div class="EtiquetaEdad">
+                        <label>Edad:</label>
+                    </div>
+                    <div class="InputEdad">
+                        <input type="number" id="edad">
+                    </div>
+                </div>
+                <br>
+                <div class="Preferancias">
+                    <div class="Etiquetas">
+                        <label>Artista Favorito:</label>
+                        <label>Comida favorita:</label>
+                        <label>Canción favorita:</label>
+                    </div>
+                    <div class="InputPreferencias">
+                        <input type="text" id="artista" placeholder="Ingrese su artista favorito">
+                        <input type="text" id="comida" placeholder="Ingrese su comida favorita">
+                        <input type="text" id="cancion" placeholder="Ingrese su canción favorita">
+                    </div>
+                </div>
+                <button onclick="mostrarPresentacion()">Mostrar presentación</button>
+            </form>
+
+            <div id="resultado" class="resultado"></div>
+
+        </section>
+    </main>
+
+    <footer>
+        <p> &copy; 2025 Todos los derechos reservados</p>
+    </footer>
+</body>
+
+</html>
